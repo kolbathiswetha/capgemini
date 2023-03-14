@@ -1,6 +1,6 @@
 module "my_vpc" {
     #count = terraform.workspace == "dev" ? 1 : 0
-    source = "git::https://github.com/kolbathiswetha/capgemini.git?ref=v1.0.0"
+    source = "git::https://github.com/kolbathiswetha/capgemini.git//modules/vpc?ref=v1.0.0"
     #count  = var.create_vpc ? 1 : 0
    vpc_cidrs = var.vpc_cidrs
      public_subnet_cidrs = var.public_subnet_cidrs
